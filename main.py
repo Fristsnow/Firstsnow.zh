@@ -125,7 +125,7 @@ def get_ciba():
 def caihongpi():
     if (Whether_caihongpi != False):
         try:
-            conn = http.client.HTTPSConnection('api.tianapi.com')  # 接口域名
+            conn = http.client.HTTPSConnection('apis.tianapi.com')  # 接口域名
             params = urllib.parse.urlencode({'key': tianxing_API})
             headers = {'Content-type': 'application/x-www-form-urlencoded'}
             conn.request('POST', '/caihongpi/index', params, headers)
@@ -144,7 +144,7 @@ def caihongpi():
 def health():
     if (Whether_health != False):
         try:
-            conn = http.client.HTTPSConnection('api.tianapi.com')  # 接口域名
+            conn = http.client.HTTPSConnection('apis.tianapi.com')  # 接口域名
             params = urllib.parse.urlencode({'key': tianxing_API})
             headers = {'Content-type': 'application/x-www-form-urlencoded'}
             conn.request('POST', '/healthtip/index', params, headers)
@@ -161,7 +161,7 @@ def health():
 def lucky():
     if (Whether_lucky != False):
         try:
-            conn = http.client.HTTPSConnection('api.tianapi.com')  # 接口域名
+            conn = http.client.HTTPSConnection('apis.tianapi.com')  # 接口域名
             params = urllib.parse.urlencode({'key': tianxing_API, 'astro': astro})
             headers = {'Content-type': 'application/x-www-form-urlencoded'}
             conn.request('POST', '/star/index', params, headers)
@@ -179,7 +179,7 @@ def lucky():
 def lizhi():
     if (Whether_lizhi != False):
         try:
-            conn = http.client.HTTPSConnection('api.tianapi.com')  # 接口域名
+            conn = http.client.HTTPSConnection('apis.tianapi.com')  # 接口域名
             params = urllib.parse.urlencode({'key': '4c4a0a60f121ef5b30e5ecd43d4ae3dc'})
             headers = {'Content-type': 'application/x-www-form-urlencoded'}
             conn.request('POST', '/lzmy/index', params, headers)
@@ -195,7 +195,7 @@ def lizhi():
 def tip():
     if (Whether_tip != False):
         try:
-            conn = http.client.HTTPSConnection('api.tianapi.com')  # 接口域名
+            conn = http.client.HTTPSConnection('apis.tianapi.com')  # 接口域名
             params = urllib.parse.urlencode({'key': tianxing_API, 'city': city})
             headers = {'Content-type': 'application/x-www-form-urlencoded'}
             conn.request('POST', '/tianqi/index', params, headers)
